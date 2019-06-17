@@ -1,0 +1,38 @@
+****************************************************************************
+Caution: Found protective or hybrid MBR and corrupt GPT. Using GPT, but disk
+verification and recovery are STRONGLY recommended.
+****************************************************************************
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.
+Creating new GPT entries.
+The operation has completed successfully.
+****************************************************************************
+Caution: Found protective or hybrid MBR and corrupt GPT. Using GPT, but disk
+verification and recovery are STRONGLY recommended.
+****************************************************************************
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.
+Creating new GPT entries.
+The operation has completed successfully.
+Setting name!
+partNum is 0
+REALLY setting name!
+The operation has completed successfully.
+Setting name!
+partNum is 1
+REALLY setting name!
+The operation has completed successfully.
+The operation has completed successfully.
+meta-data=/dev/sdb1              isize=2048   agcount=4, agsize=6400 blks
+         =                       sectsz=4096  attr=2, projid32bit=1
+         =                       crc=1        finobt=1, sparse=0
+data     =                       bsize=4096   blocks=25600, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=1608, version=2
+         =                       sectsz=4096  sunit=1 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot or after you
+run partprobe(8) or kpartx(8)
+The operation has completed successfully.

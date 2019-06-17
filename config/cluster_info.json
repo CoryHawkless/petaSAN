@@ -1,0 +1,57 @@
+{
+    "backend_1_base_ip": "172.16.180.0",
+    "backend_1_eth_name": "bond0",
+    "backend_1_mask": "255.255.255.0",
+    "backend_1_vlan_id": "",
+    "backend_2_base_ip": "172.16.181.0",
+    "backend_2_eth_name": "bond0",
+    "backend_2_mask": "255.255.255.0",
+    "backend_2_vlan_id": "",
+    "bonds": [
+        {
+            "interfaces": "eth2,eth3",
+            "is_jumbo_frames": false,
+            "mode": "active-backup",
+            "name": "bond0",
+            "primary_interface": "eth2"
+        }
+    ],
+    "eth_count": 4,
+    "iscsi_1_eth_name": "bond0",
+    "iscsi_2_eth_name": "bond0",
+    "jumbo_frames": [],
+    "management_eth_name": "bond0",
+    "management_nodes": [
+        {
+            "backend_1_ip": "172.16.180.3",
+            "backend_2_ip": "172.16.181.3",
+            "is_backup": false,
+            "is_iscsi": true,
+            "is_management": true,
+            "is_storage": true,
+            "management_ip": "172.16.103.43",
+            "name": "mor-ceph03"
+        },
+        {
+            "backend_1_ip": "172.16.180.1",
+            "backend_2_ip": "172.16.181.1",
+            "is_backup": false,
+            "is_iscsi": true,
+            "is_management": true,
+            "is_storage": true,
+            "management_ip": "172.16.103.41",
+            "name": "mor-ceph01"
+        },
+        {
+            "backend_1_ip": "172.16.180.2",
+            "backend_2_ip": "172.16.181.2",
+            "is_backup": false,
+            "is_iscsi": true,
+            "is_management": true,
+            "is_storage": true,
+            "management_ip": "172.16.103.42",
+            "name": "mor-ceph02"
+        }
+    ],
+    "name": "ceph"
+}

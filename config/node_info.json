@@ -1,0 +1,10 @@
+{
+    "backend_1_ip": "172.16.180.3",
+    "backend_2_ip": "172.16.181.3",
+    "is_backup": false,
+    "is_iscsi": true,
+    "is_management": true,
+    "is_storage": true,
+    "management_ip": "172.16.103.43",
+    "name": "mor-ceph03"
+}

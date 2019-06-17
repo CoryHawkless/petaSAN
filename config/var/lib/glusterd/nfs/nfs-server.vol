@@ -1,0 +1,7 @@
+volume nfs-server
+    type nfs/server
+    option nfs.gfs-vol.disable true
+    option nfs.drc off
+    option nfs.nlm on
+    option nfs.dynamic-volumes on
+end-volume

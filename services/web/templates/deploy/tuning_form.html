@@ -1,0 +1,157 @@
+<!--
+ Copyright (C) 2019 Maged Mokhtar <mmokhtar <at> petasan.org>
+ Copyright (C) 2019 PetaSAN www.petasan.org
+
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Affero General Public License
+ as published by the Free Software Foundation
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Affero General Public License for more details.
+ -->
+{% extends "deploy/base.html" %}
+
+{% block head%}{% endblock %}
+{% block content %}
+<section class="content">
+    <div id="myWizard" class="wizard">
+        <div class="wizard-inner">
+            <ul class="steps">
+                <li class="complete"><span class="badge bg-green">1</span>Step 1<span class="chevron"></span></li>
+                <li class="complete"><span class="badge bg-green">2</span>Step 2<span class="chevron"></span></li>
+                <li class="complete"><span class="badge bg-green">3</span>Step 3<span class="chevron"></span></li>
+                <li class="complete"><span class="badge bg-green">4</span>Step 4<span class="chevron"></span></li>
+                <li class="active"><span class="badge bg-light-blue">5</span><label style="color:#605ca8">Step 5</label><span
+                        class="chevron"></span></li>
+                <li><span class="badge">6</span>Step 6<span class="chevron"></span></li>
+                <li><span class="badge">7</span>Step 7<span class="chevron"></span></li>
+                <li><span class="badge">8</span>Step 8<span class="chevron"></span></li>
+            </ul>
+        </div>
+        <div class="step-content">
+            <div class="step-pane active" id="step1">
+                <h4>Cluster Tuning</h4>
+
+                {% if success %}
+                <form id="tuning_config" method="post"
+                      action="{{ url_for('wizard_controller.save_cluster_tuning_template') }}">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-default">
+                                <div class="box-header"><h3 class="box-title">Default Pool Settings</h3></div>
+                                <div class="box-body">
+                                    <div class="col-md-12" style="padding-left: 0px; padding-bottom: 10px;">
+                                        <div class="col-md-4">
+                                            <div class="form-group" style="margin-bottom: 0px">
+                                                <label id="lblClusterSize"><i class=""></i>Cluster Size:<font
+                                                        color="red">*</font></label>
+                                                <select class="form-control" id="cluster_size" name="cluster_size">
+                                                    <option value="0"></option>
+                                                    <option value="256">3 to 15 disks</option>
+                                                    <option value="1024">15 to 50 disks</option>
+                                                    <option value="4096">50 to 200 disks</option>
+                                                    <option value="8192">More than 200 disks</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-left: 0px; padding-bottom: 10px;">
+                                        <div class="col-md-4">
+                                            <div class="form-group" style="margin-bottom: 0px">
+                                                <label id="lblreplicas"><i class=""></i>Number of Replicas:<font
+                                                        color="red">*</font></label>
+                                                <select class="form-control" id="replicas_no" name="replicas_no">
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="tuning_template" id="lbl_tuning_template"><i class=""></i>Tuning
+                                                Template:<font
+                                                        color="red">*</font></label>
+                                            <select size="5" class="form-control" id="tuning_template"
+                                                    name="tuning_template">
+                                                <option value="Default">Default</option>
+                                                {% for template in templates %}
+                                                    {% if template != "Default" %}
+                                                        <option value="{{template}}">{{template.title()}}</option>
+                                                    {% endif %}
+                                                {% endfor %}
+                                                <option value="custom">Custom</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box box-default" id="test"
+                                     style="width: 95%; margin-left: 26px; margin-right: 26px; border: none; box-shadow: none;">
+                                    <div class="box-header with-border" style="border: none;">
+                                        <div class="box-tools pull-right" style="right: 0px; left: -7px; top: 6px;">
+                                            <button type="button" class="btn btn-box-tool btn_collapse"><i
+                                                    id="mark" class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="box-title" id="box_details_title" style="font-weight: 700; font-size: 14px;">Show
+                                            Details</h3>
+                                    </div>
+                                    <div id="demo" class="box-body collapse">
+                                        <div class="form-group">
+                                            <label>Ceph Configuration:</label>
+                                            <textarea name="ceph_script" id="ceph_script" class="form-control" rows="10"
+                                                      placeholder="Enter ..."></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>LIO Overrides:</label>
+                                            <textarea name="lio_script" id="lio_script" class="form-control" rows="10"
+                                                      placeholder="Enter ..."></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Post-Deployment Script:</label>
+                                            <textarea name='post_deploy_script' id="post_deploy_script"
+                                                      class="form-control" rows="10"
+                                                      placeholder="Enter ..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-footer">
+                                    <button type="submit" class="btn btn-primary pull-right">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                {% elif err %}
+                <div class="box  box-default">
+                    <div class="box-body">
+                        {{ macros.message(gettext(err), gettext(success), gettext(warning)) }}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+{% block js%}
+<!--input mask -->
+<script src="/static/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="/static/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="/static/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script src="/static/dist/js/pages/cluster/tuning_form.js?v=23015"></script>
+
+<script>
+    var messages = {};
+    messages.save_tuning_setting_lbl_cluster_size_empty = '{{ gettext("ui_deploy_save_tuning_setting_lbl_cluster_size_empty") }}';
+</script>
+{% endblock %}

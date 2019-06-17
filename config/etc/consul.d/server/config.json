@@ -1,0 +1,9 @@
+{
+"bootstrap_expect": 3,
+"server": true,
+"datacenter": "PetaSAN",
+"data_dir": "/opt/petasan/config/var/consul",
+"encrypt": "UmK+RAptaic7PB0dvvH09g==",
+"log_level": "INFO",
+"enable_syslog": true
+}

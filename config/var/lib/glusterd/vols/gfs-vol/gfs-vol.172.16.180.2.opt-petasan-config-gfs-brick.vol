@@ -1,0 +1,127 @@
+volume gfs-vol-posix
+    type storage/posix
+    option volume-id 3eec3016-3f31-451c-be05-0ece44d99466
+    option directory /opt/petasan/config/gfs-brick
+end-volume
+
+volume gfs-vol-trash
+    type features/trash
+    option trash-internal-op off
+    option brick-path /opt/petasan/config/gfs-brick
+    option trash-dir .trashcan
+    subvolumes gfs-vol-posix
+end-volume
+
+volume gfs-vol-changetimerecorder
+    type features/changetimerecorder
+    option record-counters off
+    option ctr-enabled off
+    option record-entry on
+    option ctr_inode_heal_expire_period 300
+    option ctr_hardlink_heal_expire_period 300
+    option ctr_link_consistency off
+    option record-exit off
+    option db-path /opt/petasan/config/gfs-brick/.glusterfs/
+    option db-name gfs-brick.db
+    option hot-brick off
+    option db-type sqlite3
+    subvolumes gfs-vol-trash
+end-volume
+
+volume gfs-vol-changelog
+    type features/changelog
+    option changelog-barrier-timeout 120
+    option changelog-dir /opt/petasan/config/gfs-brick/.glusterfs/changelogs
+    option changelog-brick /opt/petasan/config/gfs-brick
+    subvolumes gfs-vol-changetimerecorder
+end-volume
+
+volume gfs-vol-bitrot-stub
+    type features/bitrot-stub
+    option export /opt/petasan/config/gfs-brick
+    subvolumes gfs-vol-changelog
+end-volume
+
+volume gfs-vol-access-control
+    type features/access-control
+    subvolumes gfs-vol-bitrot-stub
+end-volume
+
+volume gfs-vol-locks
+    type features/locks
+    subvolumes gfs-vol-access-control
+end-volume
+
+volume gfs-vol-upcall
+    type features/upcall
+    option cache-invalidation off
+    subvolumes gfs-vol-locks
+end-volume
+
+volume gfs-vol-io-threads
+    type performance/io-threads
+    subvolumes gfs-vol-upcall
+end-volume
+
+volume gfs-vol-marker
+    type features/marker
+    option inode-quota off
+    option quota off
+    option gsync-force-xtime off
+    option xtime off
+    option quota-version 0
+    option timestamp-file /var/lib/glusterd/vols/gfs-vol/marker.tstamp
+    option volume-uuid 3eec3016-3f31-451c-be05-0ece44d99466
+    subvolumes gfs-vol-io-threads
+end-volume
+
+volume gfs-vol-barrier
+    type features/barrier
+    option barrier-timeout 120
+    option barrier disable
+    subvolumes gfs-vol-marker
+end-volume
+
+volume gfs-vol-index
+    type features/index
+    option index-base /opt/petasan/config/gfs-brick/.glusterfs/indices
+    subvolumes gfs-vol-barrier
+end-volume
+
+volume gfs-vol-quota
+    type features/quota
+    option deem-statfs off
+    option timeout 0
+    option server-quota off
+    option volume-uuid gfs-vol
+    subvolumes gfs-vol-index
+end-volume
+
+volume gfs-vol-worm
+    type features/worm
+    option worm off
+    subvolumes gfs-vol-quota
+end-volume
+
+volume gfs-vol-read-only
+    type features/read-only
+    option read-only off
+    subvolumes gfs-vol-worm
+end-volume
+
+volume /opt/petasan/config/gfs-brick
+    type debug/io-stats
+    option count-fop-hits off
+    option latency-measurement off
+    subvolumes gfs-vol-read-only
+end-volume
+
+volume gfs-vol-server
+    type protocol/server
+    option transport.tcp-user-timeout 5
+    option auth.addr./opt/petasan/config/gfs-brick.allow *
+    option auth.login.bc7567ed-01dc-4d83-8376-c82cafcb5618.password ef764ced-38dc-4e85-9b85-92867747aef7
+    option auth.login./opt/petasan/config/gfs-brick.allow bc7567ed-01dc-4d83-8376-c82cafcb5618
+    option transport-type tcp
+    subvolumes /opt/petasan/config/gfs-brick
+end-volume

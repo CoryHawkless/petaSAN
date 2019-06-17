@@ -1,0 +1,880 @@
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdg2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f7f31f95cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdf1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fb683ae8cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdg1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f57634a9cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdf1.service
+systemd detected, triggering ceph-disk@dev/sdg2.service
+systemd detected, triggering ceph-disk@dev/sdg1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdg2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdf1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdg1.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdf2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fc4cf067cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdf2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdf2.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sde2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f5473c17cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sde2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sde2.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdh2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f1b73840cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdh2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdh2.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdc1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f9b134d1cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdd1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f6f7a049cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdc1.service
+systemd detected, triggering ceph-disk@dev/sdd1.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdc2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f88e791ecf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+main_trigger: Namespace(cluster='ceph', dev='/dev/sde1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f48a4846cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdc2.service
+systemd detected, triggering ceph-disk@dev/sde1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdc1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdd1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdc2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sde1.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdh1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f3d487abcf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fb10b723cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdh1.service
+systemd detected, triggering ceph-disk@dev/sdb1.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f8afd373cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdb2.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdd2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f4aed265cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdh1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdb1.service
+systemd detected, triggering ceph-disk@dev/sdd2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdb2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdd2.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sde2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fba75ca6b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+main_trigger: Namespace(cluster='ceph', dev='/dev/sde1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fd131a3ab90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sde2
+Running command: /bin/chown ceph:ceph /dev/sde1
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdc2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f1bead49b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdh2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f4fbe519b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdh1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7ff6e96abb90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdg2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fe6a5a94b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /sbin/init --version
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdd1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fdf378d7b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sdc2
+Running command: /sbin/blkid -o udev -p /dev/sde1
+Running command: /sbin/blkid -o udev -p /dev/sde2
+Running command: /bin/chown ceph:ceph /dev/sdh2
+Running command: /bin/chown ceph:ceph /dev/sdg2
+Running command: /sbin/blkid -o udev -p /dev/sdc2
+Running command: /bin/chown ceph:ceph /dev/sdh1
+Running command: /bin/chown ceph:ceph /dev/sdd1
+Running command: /sbin/blkid -o udev -p /dev/sdh2
+Running command: /sbin/blkid -o udev -p /dev/sdh1
+Running command: /sbin/blkid -o udev -p /dev/sdg2
+Running command: /sbin/blkid -o udev -p /dev/sdd1
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdg1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f9f2d1aeb90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f52df90fb90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sdb2
+Running command: /bin/chown ceph:ceph /dev/sdg1
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Running command: /sbin/blkid -o udev -p /dev/sdg1
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdd2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7ff556d2eb90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdc1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fd3ef571b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdf1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f4506505b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sdd2
+Running command: /sbin/blkid -o udev -p /dev/sdh1
+Running command: /sbin/blkid -o udev -p /dev/sdd2
+Running command: /bin/chown ceph:ceph /dev/sdc1
+Running command: /sbin/blkid -o udev -p /dev/sdc2
+Running command: /bin/chown ceph:ceph /dev/sdf1
+Running command: /sbin/blkid -o udev -p /dev/sdc1
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Running command: /sbin/blkid -o udev -p /dev/sdf1
+trigger /dev/sdh1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid 6d604316-d9d1-43ff-9b69-1752b3529d0c
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdh1
+Running command: /sbin/blkid -o udev -p /dev/sdd1
+Running command: /sbin/blkid -o udev -p /dev/sdh2
+Running command: /sbin/blkid -o udev -p /dev/sde1
+Running command: /sbin/blkid -o udev -p /dev/sdd2
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f8ce753ab90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /sbin/blkid -o udev -p /dev/sde2
+trigger /dev/sdb2 parttype 45b0969e-9b03-4f30-b4c6-b4b80ceff106 uuid 7ee4cc4c-60e4-4372-8826-6eca4d4c5efe
+Running command: /usr/sbin/ceph-disk --verbose activate-journal /dev/sdb2
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdf2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fd04e2d8b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+trigger /dev/sdh2 parttype cafecafe-9b03-4f30-b4c6-b4b80ceff106 uuid 4814cc56-e9f5-4230-b3fc-72365e1002df
+Running command: /usr/sbin/ceph-disk --verbose activate-block /dev/sdh2
+Running command: /sbin/init --version
+Running command: /sbin/blkid -o udev -p /dev/sdg1
+Running command: /sbin/blkid -o udev -p /dev/sdf1
+Running command: /sbin/blkid -o udev -p /dev/sdg2
+Running command: /bin/chown ceph:ceph /dev/sdb1
+Running command: /bin/chown ceph:ceph /dev/sdf2
+trigger /dev/sdd1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid e819319e-211d-460e-914b-f727fe05df6a
+trigger /dev/sde1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid a8cb7893-7a6e-4fef-85d0-f27dbc613d4e
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdd1
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sde1
+trigger /dev/sdd2 parttype 45b0969e-9b03-4f30-b4c6-b4b80ceff106 uuid bee8cb6b-1c3c-43ef-8d96-70012fbabad9
+Running command: /usr/sbin/ceph-disk --verbose activate-journal /dev/sdd2
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+Running command: /sbin/blkid -o udev -p /dev/sdf2
+trigger /dev/sde2 parttype 45b0969e-9b03-4f30-b4c6-b4b80ceff106 uuid 69d4132f-2f19-4f20-bfa7-90235440469f
+Running command: /usr/sbin/ceph-disk --verbose activate-journal /dev/sde2
+trigger /dev/sdf1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid 0f69ec6f-9850-4bef-b11b-db96f8c5c614
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdf1
+Running command: /sbin/blkid -o udev -p /dev/sdc1
+trigger /dev/sdg1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid fd024605-60a2-4823-a2a0-a4f97e45f2f1
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdg1
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+trigger /dev/sdg2 parttype 45b0969e-9b03-4f30-b4c6-b4b80ceff106 uuid 087f9e28-bec2-40f4-8890-80f5f1c69f17
+Running command: /usr/sbin/ceph-disk --verbose activate-journal /dev/sdg2
+trigger /dev/sdc2 parttype 45b0969e-9b03-4f30-b4c6-b4b80ceff106 uuid f2c98b53-bb96-4e1e-a35c-7ad26c8cb534
+Running command: /usr/sbin/ceph-disk --verbose activate-journal /dev/sdc2
+trigger /dev/sdc1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid 69222d31-5982-4358-877a-5b5efa8df897
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdc1
+Running command: /sbin/blkid -o udev -p /dev/sdf2
+trigger /dev/sdf2 parttype 45b0969e-9b03-4f30-b4c6-b4b80ceff106 uuid fd7e7023-246b-4361-b5b2-191fd726b95b
+Running command: /usr/sbin/ceph-disk --verbose activate-journal /dev/sdf2
+trigger /dev/sdb1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid befaceb2-345b-4c66-b927-d6e47d3abc54
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdb1
+path = /dev/sde1
+get_dm_uuid /dev/sde1 uuid path is /sys/dev/block/8:65/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sde1
+path = /dev/sdf1
+path = /dev/sdd1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sde1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+path = /dev/sdh1
+path = /dev/sdc1
+path = /dev/sdg1
+path = /dev/sdb1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sde1 on /var/lib/ceph/tmp/mnt.E9FxX7 with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sde1 /var/lib/ceph/tmp/mnt.E9FxX7
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.E9FxX7
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.E9FxX7
+get_dm_uuid /dev/sdf1 uuid path is /sys/dev/block/8:81/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdf1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdf1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdf1 on /var/lib/ceph/tmp/mnt._meWXD with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdf1 /var/lib/ceph/tmp/mnt._meWXD
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3797, in main_activate
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt._meWXD
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt._meWXD
+get_dm_uuid /dev/sdd1 uuid path is /sys/dev/block/8:49/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdd1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdd1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3797, in main_activate
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdd1 on /var/lib/ceph/tmp/mnt.LYQMLo with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdd1 /var/lib/ceph/tmp/mnt.LYQMLo
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.LYQMLo
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.LYQMLo
+get_dm_uuid /dev/sdh2 uuid path is /sys/dev/block/8:114/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdh2
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3797, in main_activate
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdh2
+Block /dev/sdh2 has OSD UUID 6d604316-d9d1-43ff-9b69-1752b3529d0c
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/6d604316-d9d1-43ff-9b69-1752b3529d0c
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/6d604316-d9d1-43ff-9b69-1752b3529d0c on /var/lib/ceph/tmp/mnt.aLvGZE with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/6d604316-d9d1-43ff-9b69-1752b3529d0c /var/lib/ceph/tmp/mnt.aLvGZE
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.aLvGZE
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.aLvGZE
+get_dm_uuid /dev/sdg2 uuid path is /sys/dev/block/8:98/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdg2
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdg2
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5457, in <lambda>
+    func=lambda args: main_activate_space(name, args),
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 4198, in main_activate_space
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Journal /dev/sdg2 has OSD UUID fd024605-60a2-4823-a2a0-a4f97e45f2f1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/fd024605-60a2-4823-a2a0-a4f97e45f2f1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/fd024605-60a2-4823-a2a0-a4f97e45f2f1 on /var/lib/ceph/tmp/mnt.dcg7CJ with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/fd024605-60a2-4823-a2a0-a4f97e45f2f1 /var/lib/ceph/tmp/mnt.dcg7CJ
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.dcg7CJ
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.dcg7CJ
+get_dm_uuid /dev/sdh1 uuid path is /sys/dev/block/8:113/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdh1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdh1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5457, in <lambda>
+    func=lambda args: main_activate_space(name, args),
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 4198, in main_activate_space
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdh1 on /var/lib/ceph/tmp/mnt.X3HX9z with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdh1 /var/lib/ceph/tmp/mnt.X3HX9z
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.X3HX9z
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.X3HX9z
+get_dm_uuid /dev/sde2 uuid path is /sys/dev/block/8:66/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sde2
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sde2
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3797, in main_activate
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Journal /dev/sde2 has OSD UUID a8cb7893-7a6e-4fef-85d0-f27dbc613d4e
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/a8cb7893-7a6e-4fef-85d0-f27dbc613d4e
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/a8cb7893-7a6e-4fef-85d0-f27dbc613d4e on /var/lib/ceph/tmp/mnt.r_yzHU with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/a8cb7893-7a6e-4fef-85d0-f27dbc613d4e /var/lib/ceph/tmp/mnt.r_yzHU
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.r_yzHU
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.r_yzHU
+get_dm_uuid /dev/sdg1 uuid path is /sys/dev/block/8:97/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdg1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdg1
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5457, in <lambda>
+    func=lambda args: main_activate_space(name, args),
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 4198, in main_activate_space
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdg1 on /var/lib/ceph/tmp/mnt.KFPT6a with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdg1 /var/lib/ceph/tmp/mnt.KFPT6a
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.KFPT6a
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.KFPT6a
+get_dm_uuid /dev/sdb2 uuid path is /sys/dev/block/8:18/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdb2
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3797, in main_activate
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Journal /dev/sdb2 has OSD UUID befaceb2-345b-4c66-b927-d6e47d3abc54
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/befaceb2-345b-4c66-b927-d6e47d3abc54
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/befaceb2-345b-4c66-b927-d6e47d3abc54 on /var/lib/ceph/tmp/mnt.mzKcuM with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/befaceb2-345b-4c66-b927-d6e47d3abc54 /var/lib/ceph/tmp/mnt.mzKcuM
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.mzKcuM
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.mzKcuM
+get_dm_uuid /dev/sdd2 uuid path is /sys/dev/block/8:50/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdd2
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5457, in <lambda>
+    func=lambda args: main_activate_space(name, args),
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 4198, in main_activate_space
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdd2
+Journal /dev/sdd2 has OSD UUID e819319e-211d-460e-914b-f727fe05df6a
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/e819319e-211d-460e-914b-f727fe05df6a
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/e819319e-211d-460e-914b-f727fe05df6a on /var/lib/ceph/tmp/mnt.DJNz07 with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/e819319e-211d-460e-914b-f727fe05df6a /var/lib/ceph/tmp/mnt.DJNz07
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.DJNz07
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.DJNz07
+get_dm_uuid /dev/sdb1 uuid path is /sys/dev/block/8:17/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdb1
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5457, in <lambda>
+    func=lambda args: main_activate_space(name, args),
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 4198, in main_activate_space
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdb1 on /var/lib/ceph/tmp/mnt.Ew5SQ0 with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdb1 /var/lib/ceph/tmp/mnt.Ew5SQ0
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.Ew5SQ0
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.Ew5SQ0
+get_dm_uuid /dev/sdf2 uuid path is /sys/dev/block/8:82/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdf2
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdf2
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3797, in main_activate
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Journal /dev/sdf2 has OSD UUID 0f69ec6f-9850-4bef-b11b-db96f8c5c614
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/0f69ec6f-9850-4bef-b11b-db96f8c5c614
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/0f69ec6f-9850-4bef-b11b-db96f8c5c614 on /var/lib/ceph/tmp/mnt.Si8voa with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/0f69ec6f-9850-4bef-b11b-db96f8c5c614 /var/lib/ceph/tmp/mnt.Si8voa
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.Si8voa
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.Si8voa
+get_dm_uuid /dev/sdc2 uuid path is /sys/dev/block/8:34/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdc2
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdc2
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5457, in <lambda>
+    func=lambda args: main_activate_space(name, args),
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 4198, in main_activate_space
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Journal /dev/sdc2 has OSD UUID 69222d31-5982-4358-877a-5b5efa8df897
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/69222d31-5982-4358-877a-5b5efa8df897
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/69222d31-5982-4358-877a-5b5efa8df897 on /var/lib/ceph/tmp/mnt.a35RzU with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/69222d31-5982-4358-877a-5b5efa8df897 /var/lib/ceph/tmp/mnt.a35RzU
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.a35RzU
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.a35RzU
+get_dm_uuid /dev/sdc1 uuid path is /sys/dev/block/8:33/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdc1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdc1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5457, in <lambda>
+    func=lambda args: main_activate_space(name, args),
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 4198, in main_activate_space
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdc1 on /var/lib/ceph/tmp/mnt.DV69yf with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdc1 /var/lib/ceph/tmp/mnt.DV69yf
+Cluster uuid is 1404034d-d963-4b65-a069-bce67dcbdafe
+Failed to activate
+Unmounting /var/lib/ceph/tmp/mnt.DV69yf
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.DV69yf
+
+Traceback (most recent call last):
+  File "/usr/sbin/ceph-disk", line 9, in <module>
+    load_entry_point('ceph-disk==1.0.0', 'console_scripts', 'ceph-disk')()
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5763, in run
+    main(sys.argv[1:])
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 5707, in main
+    args.func(args)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3797, in main_activate
+    reactivate=args.reactivate,
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3560, in mount_activate
+    (osd_id, cluster) = activate(path, activate_key_template, init)
+  File "/usr/lib/python2.7/dist-packages/ceph_disk/main.py", line 3707, in activate
+    ' with fsid %s' % ceph_fsid)
+ceph_disk.main.Error: Error: No cluster conf found in /etc/ceph with fsid 1404034d-d963-4b65-a069-bce67dcbdafe
+
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Writing zeros to existing partitions on /dev/sdb
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Zapping partition table on /dev/sdb
+Running command: /sbin/sgdisk --zap-all -- /dev/sdb
+Running command: /sbin/sgdisk --clear --mbrtogpt -- /dev/sdb
+Calling partprobe on zapped device /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+Running command: /usr/bin/flock -s /dev/sdb /sbin/partprobe /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+Running command: /usr/bin/ceph-osd --cluster=MOR2 --show-config-value=fsid
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Will colocate block with data on /dev/sdb
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup bluestore_block_size
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup bluestore_block_db_size
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup bluestore_block_wal_size
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup osd_mkfs_type
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup osd_fs_type
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup osd_mkfs_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup osd_fs_mkfs_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup osd_fs_mount_options_xfs
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Writing zeros to existing partitions on /dev/sdb
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Zapping partition table on /dev/sdb
+Running command: /sbin/sgdisk --zap-all -- /dev/sdb
+Running command: /sbin/sgdisk --clear --mbrtogpt -- /dev/sdb
+Calling partprobe on zapped device /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+Running command: /usr/bin/flock -s /dev/sdb /sbin/partprobe /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Creating osd partition on /dev/sdb
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+name = data
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Creating data partition num 1 size 100 on /dev/sdb
+Running command: /sbin/sgdisk --new=1:0:+100M --change-name=1:ceph data --partition-guid=1:b0a61884-4e18-481f-be4f-08662a20d2c3 --typecode=1:89c57f98-2fe5-4dc0-89c1-f3ad0ceff2be --mbrtogpt -- /dev/sdb
+Calling partprobe on created device /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+Running command: /usr/bin/flock -s /dev/sdb /sbin/partprobe /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+get_dm_uuid /dev/sdb1 uuid path is /sys/dev/block/8:17/dm/uuid
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+name = block
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Creating block partition num 2 size 0 on /dev/sdb
+Running command: /sbin/sgdisk --largest-new=2 --change-name=2:ceph block --partition-guid=2:7fa93791-eba7-4b6e-bd91-56ce673743b9 --typecode=2:cafecafe-9b03-4f30-b4c6-b4b80ceff2be --mbrtogpt -- /dev/sdb
+Calling partprobe on created device /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+Running command: /usr/bin/flock -s /dev/sdb /sbin/partprobe /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+Running command: /bin/dd if=/dev/zero of=/dev/sdb2 bs=1M count=500 oflag=direct,dsync
+Success zapping block partition on /dev/sdb2
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+get_dm_uuid /dev/sdb2 uuid path is /sys/dev/block/8:18/dm/uuid
+Block is GPT partition /dev/disk/by-partuuid/7fa93791-eba7-4b6e-bd91-56ce673743b9
+Running command: /sbin/sgdisk --typecode=2:cafecafe-9b03-4f30-b4c6-b4b80ceff106 -- /dev/sdb
+Calling partprobe on prepared device /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f70b99d2cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdb2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdb2.service
+Running command: /usr/bin/flock -s /dev/sdb /sbin/partprobe /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fc4b3a66b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sdb2
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Block is GPT partition /dev/disk/by-partuuid/7fa93791-eba7-4b6e-bd91-56ce673743b9
+Creating xfs fs on /dev/sdb1
+Running command: /sbin/mkfs -t xfs -f -i size=2048 -- /dev/sdb1
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+trigger /dev/sdb2 parttype cafecafe-9b03-4f30-b4c6-b4b80ceff106 uuid 7fa93791-eba7-4b6e-bd91-56ce673743b9
+Running command: /usr/sbin/ceph-disk --verbose activate-block /dev/sdb2
+Mounting /dev/sdb1 on /var/lib/ceph/tmp/mnt.Z7v_mp with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdb1 /var/lib/ceph/tmp/mnt.Z7v_mp
+Preparing osd data dir /var/lib/ceph/tmp/mnt.Z7v_mp
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.Z7v_mp/ceph_fsid.11060.tmp
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.Z7v_mp/fsid.11060.tmp
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.Z7v_mp/magic.11060.tmp
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.Z7v_mp/block_uuid.11060.tmp
+Creating symlink /var/lib/ceph/tmp/mnt.Z7v_mp/block -> /dev/disk/by-partuuid/7fa93791-eba7-4b6e-bd91-56ce673743b9
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.Z7v_mp/type.11060.tmp
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.Z7v_mp
+Unmounting /var/lib/ceph/tmp/mnt.Z7v_mp
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.Z7v_mp
+get_dm_uuid /dev/sdb uuid path is /sys/dev/block/8:16/dm/uuid
+Running command: /sbin/sgdisk --typecode=1:4fbd7e29-9d25-41b8-afd0-062c0ceff05d -- /dev/sdb
+get_dm_uuid /dev/sdb2 uuid path is /sys/dev/block/8:18/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdb2
+Block /dev/sdb2 has OSD UUID 00000000-0000-0000-0000-000000000000
+activate: OSD device not present, not starting, yet
+
+
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f66937c0cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdb1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdb1.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fd7ca748cf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdb2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdb2.service
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fbde9946b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sdb1
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f4f5c324b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+Running command: /bin/chown ceph:ceph /dev/sdb2
+trigger /dev/sdb1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid b0a61884-4e18-481f-be4f-08662a20d2c3
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdb1
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f0fcaafccf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdb1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdb1.service
+trigger /dev/sdb2 parttype cafecafe-9b03-4f30-b4c6-b4b80ceff106 uuid 7fa93791-eba7-4b6e-bd91-56ce673743b9
+Running command: /usr/sbin/ceph-disk --verbose activate-block /dev/sdb2
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fbaaa7dccf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdb2.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdb2.service
+path = /dev/sdb1
+get_dm_uuid /dev/sdb1 uuid path is /sys/dev/block/8:17/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdb1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdb1 on /var/lib/ceph/tmp/mnt.RVhJCf with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdb1 /var/lib/ceph/tmp/mnt.RVhJCf
+Cluster uuid is adb6c526-2778-4133-9eaf-7500d5836d1e
+Running command: /usr/bin/ceph-osd --cluster=MOR2 --show-config-value=fsid
+Cluster name is MOR2
+OSD uuid is b0a61884-4e18-481f-be4f-08662a20d2c3
+Allocating OSD id...
+Running command: /usr/bin/ceph-authtool --gen-print-key
+stderr 
+Running command with stdin: ceph --cluster MOR2 --name client.bootstrap-osd --keyring /var/lib/ceph/bootstrap-osd/MOR2.keyring -i - osd new b0a61884-4e18-481f-be4f-08662a20d2c3
+5
+
+Running command: /usr/bin/ceph-authtool /var/lib/ceph/tmp/mnt.RVhJCf/keyring --create-keyring --name osd.5 --add-key AQAORQddAL4TJhAAlSA9qtJcy7v86IbE6AHIVQ==
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.RVhJCf/keyring
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.RVhJCf/whoami.11347.tmp
+OSD id is 5
+Initializing OSD...
+Running command: /usr/bin/ceph --cluster MOR2 --name client.bootstrap-osd --keyring /var/lib/ceph/bootstrap-osd/MOR2.keyring mon getmap -o /var/lib/ceph/tmp/mnt.RVhJCf/activate.monmap
+Calling partprobe on prepared device /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+Running command: /usr/bin/flock -s /dev/sdb /sbin/partprobe /dev/sdb
+Running command: /sbin/udevadm settle --timeout=600
+Running command: /sbin/udevadm trigger --action=add --sysname-match sdb1
+Running command: /usr/bin/ceph-osd --cluster MOR2 --mkfs -i 5 --monmap /var/lib/ceph/tmp/mnt.RVhJCf/activate.monmap --osd-data /var/lib/ceph/tmp/mnt.RVhJCf --osd-uuid b0a61884-4e18-481f-be4f-08662a20d2c3 --setuser ceph --setgroup ceph
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f486754acf8>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=None, sysconfdir='/etc/ceph', verbose=True)
+systemd detected, triggering ceph-disk@dev/sdb1.service
+Running command: /bin/systemctl --no-block restart ceph-disk@dev/sdb1.service
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup init
+Running command: /usr/bin/ceph-detect-init --default sysvinit
+Marking with init system systemd
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.RVhJCf/systemd
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.RVhJCf/active.11347.tmp
+MOR2 osd.5 data dir is ready at /var/lib/ceph/tmp/mnt.RVhJCf
+Moving mount to final location...
+Running command: /bin/mount -o noatime,inode64 -- /dev/sdb1 /var/lib/ceph/osd/MOR2-5
+Running command: /bin/umount -l -- /var/lib/ceph/tmp/mnt.RVhJCf
+Starting MOR2 osd.5...
+Running command: /bin/systemctl disable ceph-osd@5
+Running command: /bin/systemctl disable ceph-osd@5 --runtime
+Running command: /bin/systemctl enable ceph-osd@5 --runtime
+Running command: /bin/systemctl start ceph-osd@5
+get_dm_uuid /dev/sdb2 uuid path is /sys/dev/block/8:18/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdb2
+creating /var/lib/ceph/tmp/mnt.RVhJCf/keyring
+added entity osd.5 auth auth(auid = 18446744073709551615 key=AQAORQddAL4TJhAAlSA9qtJcy7v86IbE6AHIVQ== with 0 caps)
+
+got monmap epoch 3
+2019-06-17 17:15:21.937482 7f76f135de00 -1 created object store /var/lib/ceph/tmp/mnt.RVhJCf for osd.5 fsid adb6c526-2778-4133-9eaf-7500d5836d1e
+Created symlink from /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service to /lib/systemd/system/ceph-osd@.service.
+
+Block /dev/sdb2 has OSD UUID b0a61884-4e18-481f-be4f-08662a20d2c3
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/b0a61884-4e18-481f-be4f-08662a20d2c3
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/b0a61884-4e18-481f-be4f-08662a20d2c3 on /var/lib/ceph/tmp/mnt.UqEk25 with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/b0a61884-4e18-481f-be4f-08662a20d2c3 /var/lib/ceph/tmp/mnt.UqEk25
+Cluster uuid is adb6c526-2778-4133-9eaf-7500d5836d1e
+Running command: /usr/bin/ceph-osd --cluster=MOR2 --show-config-value=fsid
+Cluster name is MOR2
+OSD uuid is b0a61884-4e18-481f-be4f-08662a20d2c3
+OSD id is 5
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup init
+Running command: /usr/bin/ceph-detect-init --default sysvinit
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7fde345f9b90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sdb1
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+trigger /dev/sdb1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid b0a61884-4e18-481f-be4f-08662a20d2c3
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdb1
+Marking with init system systemd
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.UqEk25/systemd
+MOR2 osd.5 data dir is ready at /var/lib/ceph/tmp/mnt.UqEk25
+MOR2 osd.5 already mounted in position; unmounting ours.
+Unmounting /var/lib/ceph/tmp/mnt.UqEk25
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.UqEk25
+Starting MOR2 osd.5...
+Running command: /bin/systemctl disable ceph-osd@5
+Running command: /bin/systemctl disable ceph-osd@5 --runtime
+path = /dev/sdb1
+Running command: /bin/systemctl enable ceph-osd@5 --runtime
+Running command: /bin/systemctl start ceph-osd@5
+get_dm_uuid /dev/sdb1 uuid path is /sys/dev/block/8:17/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdb1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+
+Removed symlink /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service.
+Created symlink from /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service to /lib/systemd/system/ceph-osd@.service.
+
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdb1 on /var/lib/ceph/tmp/mnt.qMweXi with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdb1 /var/lib/ceph/tmp/mnt.qMweXi
+Cluster uuid is adb6c526-2778-4133-9eaf-7500d5836d1e
+Running command: /usr/bin/ceph-osd --cluster=MOR2 --show-config-value=fsid
+Cluster name is MOR2
+OSD uuid is b0a61884-4e18-481f-be4f-08662a20d2c3
+OSD id is 5
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup init
+Running command: /usr/bin/ceph-detect-init --default sysvinit
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb2', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f3e8a3acb90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sdb2
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+trigger /dev/sdb2 parttype cafecafe-9b03-4f30-b4c6-b4b80ceff106 uuid 7fa93791-eba7-4b6e-bd91-56ce673743b9
+Running command: /usr/sbin/ceph-disk --verbose activate-block /dev/sdb2
+Marking with init system systemd
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.qMweXi/systemd
+MOR2 osd.5 data dir is ready at /var/lib/ceph/tmp/mnt.qMweXi
+MOR2 osd.5 already mounted in position; unmounting ours.
+Unmounting /var/lib/ceph/tmp/mnt.qMweXi
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.qMweXi
+Starting MOR2 osd.5...
+Running command: /bin/systemctl disable ceph-osd@5
+Running command: /bin/systemctl disable ceph-osd@5 --runtime
+Running command: /bin/systemctl enable ceph-osd@5 --runtime
+Running command: /bin/systemctl start ceph-osd@5
+get_dm_uuid /dev/sdb2 uuid path is /sys/dev/block/8:18/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdb2
+Running command: /usr/bin/ceph-osd --get-device-fsid /dev/sdb2
+
+Removed symlink /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service.
+Created symlink from /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service to /lib/systemd/system/ceph-osd@.service.
+
+Block /dev/sdb2 has OSD UUID b0a61884-4e18-481f-be4f-08662a20d2c3
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/disk/by-partuuid/b0a61884-4e18-481f-be4f-08662a20d2c3
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/disk/by-partuuid/b0a61884-4e18-481f-be4f-08662a20d2c3 on /var/lib/ceph/tmp/mnt.35VfLY with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/disk/by-partuuid/b0a61884-4e18-481f-be4f-08662a20d2c3 /var/lib/ceph/tmp/mnt.35VfLY
+Cluster uuid is adb6c526-2778-4133-9eaf-7500d5836d1e
+Running command: /usr/bin/ceph-osd --cluster=MOR2 --show-config-value=fsid
+Cluster name is MOR2
+OSD uuid is b0a61884-4e18-481f-be4f-08662a20d2c3
+OSD id is 5
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup init
+Running command: /usr/bin/ceph-detect-init --default sysvinit
+main_trigger: Namespace(cluster='ceph', dev='/dev/sdb1', dmcrypt=None, dmcrypt_key_dir='/etc/ceph/dmcrypt-keys', func=<function main_trigger at 0x7f51c1c0fb90>, log_stdout=True, prepend_to_path='/usr/bin', prog='ceph-disk', setgroup=None, setuser=None, statedir='/var/lib/ceph', sync=True, sysconfdir='/etc/ceph', verbose=True)
+Running command: /sbin/init --version
+Running command: /bin/chown ceph:ceph /dev/sdb1
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+trigger /dev/sdb1 parttype 4fbd7e29-9d25-41b8-afd0-062c0ceff05d uuid b0a61884-4e18-481f-be4f-08662a20d2c3
+Running command: /usr/sbin/ceph-disk --verbose activate /dev/sdb1
+Marking with init system systemd
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.35VfLY/systemd
+MOR2 osd.5 data dir is ready at /var/lib/ceph/tmp/mnt.35VfLY
+MOR2 osd.5 already mounted in position; unmounting ours.
+Unmounting /var/lib/ceph/tmp/mnt.35VfLY
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.35VfLY
+Starting MOR2 osd.5...
+Running command: /bin/systemctl disable ceph-osd@5
+Running command: /bin/systemctl disable ceph-osd@5 --runtime
+path = /dev/sdb1
+Running command: /bin/systemctl enable ceph-osd@5 --runtime
+Running command: /bin/systemctl start ceph-osd@5
+get_dm_uuid /dev/sdb1 uuid path is /sys/dev/block/8:17/dm/uuid
+Running command: /sbin/blkid -o udev -p /dev/sdb1
+Running command: /sbin/blkid -p -s TYPE -o value -- /dev/sdb1
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_mount_options_xfs
+
+Removed symlink /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service.
+Created symlink from /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service to /lib/systemd/system/ceph-osd@.service.
+
+Running command: /usr/bin/ceph-conf --cluster=ceph --name=osd. --lookup osd_fs_mount_options_xfs
+Mounting /dev/sdb1 on /var/lib/ceph/tmp/mnt.fsBDO8 with options noatime,inode64
+Running command: /bin/mount -t xfs -o noatime,inode64 -- /dev/sdb1 /var/lib/ceph/tmp/mnt.fsBDO8
+Cluster uuid is adb6c526-2778-4133-9eaf-7500d5836d1e
+Running command: /usr/bin/ceph-osd --cluster=MOR2 --show-config-value=fsid
+Cluster name is MOR2
+OSD uuid is b0a61884-4e18-481f-be4f-08662a20d2c3
+OSD id is 5
+Running command: /usr/bin/ceph-conf --cluster=MOR2 --name=osd. --lookup init
+Running command: /usr/bin/ceph-detect-init --default sysvinit
+Marking with init system systemd
+Running command: /bin/chown -R ceph:ceph /var/lib/ceph/tmp/mnt.fsBDO8/systemd
+MOR2 osd.5 data dir is ready at /var/lib/ceph/tmp/mnt.fsBDO8
+MOR2 osd.5 already mounted in position; unmounting ours.
+Unmounting /var/lib/ceph/tmp/mnt.fsBDO8
+Running command: /bin/umount -- /var/lib/ceph/tmp/mnt.fsBDO8
+Starting MOR2 osd.5...
+Running command: /bin/systemctl disable ceph-osd@5
+Running command: /bin/systemctl disable ceph-osd@5 --runtime
+Running command: /bin/systemctl enable ceph-osd@5 --runtime
+Running command: /bin/systemctl start ceph-osd@5
+
+Removed symlink /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service.
+Created symlink from /run/systemd/system/ceph-osd.target.wants/ceph-osd@5.service to /lib/systemd/system/ceph-osd@.service.
+

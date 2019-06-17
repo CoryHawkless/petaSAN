@@ -1,0 +1,84 @@
+volume gfs-vol-client-0
+    type protocol/client
+    option send-gids true
+    option password ef764ced-38dc-4e85-9b85-92867747aef7
+    option username bc7567ed-01dc-4d83-8376-c82cafcb5618
+    option transport-type tcp
+    option remote-subvolume /opt/petasan/config/gfs-brick
+    option remote-host 172.16.180.3
+    option ping-timeout 5
+end-volume
+
+volume gfs-vol-client-1
+    type protocol/client
+    option send-gids true
+    option password ef764ced-38dc-4e85-9b85-92867747aef7
+    option username bc7567ed-01dc-4d83-8376-c82cafcb5618
+    option transport-type tcp
+    option remote-subvolume /opt/petasan/config/gfs-brick
+    option remote-host 172.16.180.1
+    option ping-timeout 5
+end-volume
+
+volume gfs-vol-client-2
+    type protocol/client
+    option send-gids true
+    option password ef764ced-38dc-4e85-9b85-92867747aef7
+    option username bc7567ed-01dc-4d83-8376-c82cafcb5618
+    option transport-type tcp
+    option remote-subvolume /opt/petasan/config/gfs-brick
+    option remote-host 172.16.180.2
+    option ping-timeout 5
+end-volume
+
+volume gfs-vol-replicate-0
+    type cluster/replicate
+    subvolumes gfs-vol-client-0 gfs-vol-client-1 gfs-vol-client-2
+end-volume
+
+volume gfs-vol-dht
+    type cluster/distribute
+    subvolumes gfs-vol-replicate-0
+end-volume
+
+volume gfs-vol-write-behind
+    type performance/write-behind
+    subvolumes gfs-vol-dht
+end-volume
+
+volume gfs-vol-read-ahead
+    type performance/read-ahead
+    subvolumes gfs-vol-write-behind
+end-volume
+
+volume gfs-vol-readdir-ahead
+    type performance/readdir-ahead
+    subvolumes gfs-vol-read-ahead
+end-volume
+
+volume gfs-vol-io-cache
+    type performance/io-cache
+    subvolumes gfs-vol-readdir-ahead
+end-volume
+
+volume gfs-vol-quick-read
+    type performance/quick-read
+    subvolumes gfs-vol-io-cache
+end-volume
+
+volume gfs-vol-open-behind
+    type performance/open-behind
+    subvolumes gfs-vol-quick-read
+end-volume
+
+volume gfs-vol-md-cache
+    type performance/md-cache
+    subvolumes gfs-vol-open-behind
+end-volume
+
+volume gfs-vol
+    type debug/io-stats
+    option count-fop-hits off
+    option latency-measurement off
+    subvolumes gfs-vol-md-cache
+end-volume

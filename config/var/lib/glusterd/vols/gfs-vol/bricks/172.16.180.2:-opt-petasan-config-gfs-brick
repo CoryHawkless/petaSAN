@@ -1,0 +1,8 @@
+hostname=172.16.180.2
+path=/opt/petasan/config/gfs-brick
+listen-port=0
+rdma.listen-port=0
+decommissioned=0
+brick-id=gfs-vol-client-2
+mount_dir=/gfs-brick
+snap-status=0

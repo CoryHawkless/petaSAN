@@ -1,0 +1,4 @@
+[client.kvm]
+        key = AQCKWdJXbHsLGxAAYaFjAJG/EtJkXTjGPd/01g==
+        caps mon = "allow r"
+        caps osd = "profile rbd"

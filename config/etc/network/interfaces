@@ -1,0 +1,6 @@
+auto eth3
+iface eth3 inet static
+        address 172.16.103.43
+        netmask 255.255.255.0
+        gateway 172.16.103.254
+        dns-nameservers 172.20.0.2

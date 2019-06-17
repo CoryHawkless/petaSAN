@@ -1,0 +1,343 @@
+ 17/06/2019 06:48:00 INFO     Start settings IPs
+ 17/06/2019 16:18:48 ERROR    Config file error. The petaSAN os maybe just installed.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/cluster/deploy.py", line 54, in get_node_status
+    node_name = config.get_node_info().name
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/core/cluster/configuration.py", line 103, in get_node_info
+    with open(config.get_node_info_file_path(), 'r') as f:
+IOError: [Errno 2] No such file or directory: '/opt/petasan/config/node_info.json'
+ 17/06/2019 16:19:05 INFO     Created keys for cluster MOR2
+ 17/06/2019 16:19:05 INFO     Created cluster file and set cluster name to MOR2
+ 17/06/2019 16:19:05 INFO     password set successfully.
+ 17/06/2019 16:19:34 INFO     Updated cluster interface successfully.
+ 17/06/2019 16:20:30 INFO     Updated cluster network successfully.
+ 17/06/2019 16:21:09 INFO     Current tuning configurations saved.
+ 17/06/2019 16:21:26 INFO     Set node info completed successfully.
+ 17/06/2019 16:21:36 ERROR    400: Bad Request
+ 17/06/2019 16:21:36 INFO     Set node role completed successfully.
+ 17/06/2019 16:21:39 INFO     Node 1 added, cluster requires 2 other nodes to build.
+ 17/06/2019 16:21:39 INFO     Run post deploy script.
+ 17/06/2019 16:55:46 INFO     files_sync.py process is 2683
+ 17/06/2019 16:55:46 INFO     files_sync.py process stopped
+ 17/06/2019 16:55:46 INFO     iscsi_service.py process is 2685
+ 17/06/2019 16:55:46 INFO     iscsi_service.py process stopped
+ 17/06/2019 16:55:46 INFO     admin.py process is 2687
+ 17/06/2019 16:55:46 INFO     admin.py process stopped
+ 17/06/2019 16:55:47 INFO     Stopping ceph services
+ 17/06/2019 16:55:47 INFO     Start cleaning config files
+ 17/06/2019 16:55:47 INFO     End cleaning config files
+ 17/06/2019 16:55:47 INFO     Starting ceph services
+ 17/06/2019 16:55:48 INFO     delete /opt/petasan/config/etc/consul.d
+ 17/06/2019 16:55:48 INFO     delete /opt/petasan/config/var/consul
+ 17/06/2019 16:59:07 ERROR    Cluster is not completed, PetasSAN will check node join status.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/cluster/deploy.py", line 62, in get_node_status
+    raise Exception("Cluster is not completed, PetasSAN will check node join status.")
+Exception: Cluster is not completed, PetasSAN will check node join status.
+ 17/06/2019 17:01:49 ERROR    Cluster is not completed, PetasSAN will check node join status.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/cluster/deploy.py", line 62, in get_node_status
+    raise Exception("Cluster is not completed, PetasSAN will check node join status.")
+Exception: Cluster is not completed, PetasSAN will check node join status.
+ 17/06/2019 17:02:34 INFO     files_sync.py process is 2903
+ 17/06/2019 17:02:34 INFO     files_sync.py process stopped
+ 17/06/2019 17:02:34 INFO     iscsi_service.py process is 2905
+ 17/06/2019 17:02:34 INFO     iscsi_service.py process stopped
+ 17/06/2019 17:02:34 INFO     admin.py process is 2907
+ 17/06/2019 17:02:34 INFO     admin.py process stopped
+ 17/06/2019 17:02:34 INFO     Stopping ceph services
+ 17/06/2019 17:02:34 INFO     Start cleaning config files
+ 17/06/2019 17:02:35 INFO     End cleaning config files
+ 17/06/2019 17:02:35 INFO     Starting ceph services
+ 17/06/2019 17:02:39 INFO     delete /opt/petasan/config/etc/consul.d
+ 17/06/2019 17:02:39 INFO     delete /opt/petasan/config/var/consul
+ 17/06/2019 17:02:43 INFO     str_start_command: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>consul agent -config-dir /opt/petasan/config/etc/consul.d/server -bind 172.16.180.3  -retry-join 172.16.180.1 -retry-join 172.16.180.2
+ 17/06/2019 17:03:30 INFO     create_mgr() fresh install
+ 17/06/2019 17:03:30 INFO     create_mgr() started
+ 17/06/2019 17:03:30 INFO     create_mgr() cmd: mkdir -p /var/lib/ceph/mgr/MOR2-mor-ceph03
+ 17/06/2019 17:03:30 INFO     create_mgr() cmd: ceph --cluster MOR2 auth get-or-create mgr.mor-ceph03  mon  'allow profile mgr' osd 'allow *' mds 'allow *'   -o /var/lib/ceph/mgr/MOR2-mor-ceph03/keyring
+ 17/06/2019 17:03:31 INFO     create_mgr() ended successfully
+ 17/06/2019 17:05:18 INFO     Starting cluster file sync service
+ 17/06/2019 17:05:19 INFO     Starting PetaSAN service
+ 17/06/2019 17:05:19 INFO     Service is starting.
+ 17/06/2019 17:05:19 INFO     Cleaning unused configurations. 
+ 17/06/2019 17:05:19 INFO     Cleaning all mapped disks
+ 17/06/2019 17:05:19 INFO     Cleaning unused rbd images.
+ 17/06/2019 17:05:19 INFO     Cleaning unused ips.
+ 17/06/2019 17:05:21 INFO     Starting Cluster Management application
+ 17/06/2019 17:05:21 INFO     Starting Node Stats Service
+ 17/06/2019 17:05:21 INFO     Starting OSDs
+ 17/06/2019 17:05:21 INFO     Cluster is just starting, system will delete all active disk resources
+ 17/06/2019 17:06:33 INFO     console.py process is 1765
+ 17/06/2019 17:06:33 INFO     Trying to stop console.py process
+ 17/06/2019 17:06:36 INFO     console.py process stopped
+ 17/06/2019 17:06:36 INFO     console.py process is 1769
+ 17/06/2019 17:06:36 INFO     console.py process stopped
+ 17/06/2019 17:06:36 INFO     console.py process is 1772
+ 17/06/2019 17:06:36 INFO     console.py process stopped
+ 17/06/2019 17:06:36 INFO     console.py process is 3721
+ 17/06/2019 17:06:49 INFO     GlusterFS mount attempt 
+ 17/06/2019 17:09:26 INFO     Success saving application config 
+ 17/06/2019 17:09:26 INFO     Success saving application config 
+ 17/06/2019 17:09:26 INFO     Success saving application config 
+ 17/06/2019 17:15:02 INFO     Start add osd job for disk sdb.
+ 17/06/2019 17:15:02 INFO     Start add osd job 10415
+ 
+ 17/06/2019 17:15:03 INFO     Start cleaning disk sdb
+ 17/06/2019 17:15:03 INFO     Executing wipefs --all /dev/sdb
+ 17/06/2019 17:15:03 INFO     Executing dd if=/dev/zero of=/dev/sdb bs=1M count=500 oflag=direct,dsync >/dev/null 2>&1
+ 17/06/2019 17:15:04 INFO     Executing parted -s /dev/sdb mklabel gpt
+ 17/06/2019 17:15:05 INFO     Executing partprobe /dev/sdb
+ 17/06/2019 17:15:08 INFO     Starting ceph-disk zap /dev/sdb
+ 17/06/2019 17:15:10 INFO     ceph-disk zap done
+ 17/06/2019 17:15:10 INFO     User didn't select a journal for disk sdb, so the journal will be on the same disk.
+ 17/06/2019 17:15:10 INFO     Start prepare osd sdb
+ 17/06/2019 17:15:10 INFO     Starting ceph-disk prepare --zap-disk  --bluestore --block-dev /dev/sdb --cluster MOR2
+ 17/06/2019 17:19:43 INFO     include_wwn_fsid_tag() is true
+ 17/06/2019 17:19:43 INFO     add disk wwn is adb6c52600001
+ 17/06/2019 17:19:45 INFO     Disk 100g created
+ 17/06/2019 17:19:45 INFO     Successfully created key 00001 for new disk.
+ 17/06/2019 17:19:45 INFO     Successfully created key /00001/1 for new disk.
+ 17/06/2019 17:19:45 INFO     Successfully created key /00001/2 for new disk.
+ 17/06/2019 17:19:45 INFO     Successfully created key /00001/3 for new disk.
+ 17/06/2019 17:19:45 INFO     Successfully created key /00001/4 for new disk.
+ 17/06/2019 17:19:48 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:19:48 INFO     Image image-00001 mapped successfully.
+ 17/06/2019 17:19:51 INFO     LIO add_target() disk wwn is adb6c52600001
+ 17/06/2019 17:19:51 INFO     Path 00001/1 acquired successfully
+ 17/06/2019 17:19:58 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:19:59 INFO     Path 00001/3 acquired successfully
+ 17/06/2019 17:22:32 INFO     Success saving application config 
+ 17/06/2019 17:22:32 INFO     Success saving application config 
+ 17/06/2019 17:22:32 INFO     Success saving application config 
+ 17/06/2019 17:22:40 INFO     Successfully created key 00001 for new disk.
+ 17/06/2019 17:22:42 INFO     Cleaned disk path 00001/3.
+ 17/06/2019 17:22:42 INFO     Cleaned disk path 00001/1.
+ 17/06/2019 17:22:42 INFO     PetaSAN cleaned local paths not locked by this node in consul.
+ 17/06/2019 17:22:42 INFO     Stopping disk 00001
+ 17/06/2019 17:22:42 ERROR    Could not find ips for image-00001 
+ 17/06/2019 17:22:42 INFO     LIO deleted backstore image image-00001 
+ 17/06/2019 17:22:42 INFO     LIO deleted Target iqn.2016-05.com.heliostack:00001
+ 17/06/2019 17:22:42 INFO     Image image-00001 unmapped successfully.
+ 17/06/2019 17:22:44 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:22:44 INFO     PetaSAN removed key of stopped disk 00001 from consul.
+ 17/06/2019 17:22:49 INFO     Successfully created key 00001 for new disk.
+ 17/06/2019 17:22:49 INFO     Successfully created key /00001/1 for new disk.
+ 17/06/2019 17:22:49 INFO     Successfully created key /00001/2 for new disk.
+ 17/06/2019 17:22:49 INFO     Successfully created key /00001/3 for new disk.
+ 17/06/2019 17:22:49 INFO     Successfully created key /00001/4 for new disk.
+ 17/06/2019 17:22:52 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:22:52 INFO     Could not lock path 00001/1 with session 22a28eb0-6372-1884-257b-629356a2077c.
+ 17/06/2019 17:22:53 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:22:53 INFO     Could not lock path 00001/2 with session 22a28eb0-6372-1884-257b-629356a2077c.
+ 17/06/2019 17:22:54 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:22:54 INFO     Image image-00001 mapped successfully.
+ 17/06/2019 17:22:58 INFO     LIO add_target() disk wwn is adb6c52600001
+ 17/06/2019 17:22:58 INFO     Path 00001/4 acquired successfully
+ 17/06/2019 17:23:01 INFO     Successfully created key 00001 for new disk.
+ 17/06/2019 17:23:05 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:23:05 INFO     Could not lock path 00001/3 with session 22a28eb0-6372-1884-257b-629356a2077c.
+ 17/06/2019 17:23:05 INFO     Cleaned disk path 00001/4.
+ 17/06/2019 17:23:05 INFO     PetaSAN cleaned local paths not locked by this node in consul.
+ 17/06/2019 17:23:05 INFO     Stopping disk 00001
+ 17/06/2019 17:23:05 ERROR    Could not find ips for image-00001 
+ 17/06/2019 17:23:05 INFO     LIO deleted backstore image image-00001 
+ 17/06/2019 17:23:05 INFO     LIO deleted Target iqn.2016-05.com.heliostack:00001
+ 17/06/2019 17:23:05 INFO     Image image-00001 unmapped successfully.
+ 17/06/2019 17:23:07 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:23:07 INFO     PetaSAN removed key of stopped disk 00001 from consul.
+ 17/06/2019 17:23:27 INFO     include_wwn_fsid_tag() is true
+ 17/06/2019 17:23:27 INFO     add disk wwn is adb6c52600001
+ 17/06/2019 17:23:28 INFO     Successfully created key 00001 for new disk.
+ 17/06/2019 17:23:28 INFO     Successfully created key /00001/1 for new disk.
+ 17/06/2019 17:23:28 INFO     Successfully created key /00001/2 for new disk.
+ 17/06/2019 17:23:28 INFO     Successfully created key /00001/3 for new disk.
+ 17/06/2019 17:23:28 INFO     Successfully created key /00001/4 for new disk.
+ 17/06/2019 17:23:31 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:23:31 INFO     Image image-00001 mapped successfully.
+ 17/06/2019 17:23:34 INFO     LIO add_target() disk wwn is adb6c52600001
+ 17/06/2019 17:23:34 INFO     Path 00001/1 acquired successfully
+ 17/06/2019 17:23:41 INFO     Found pool:iscsi for disk:00001 via consul
+ 17/06/2019 17:23:41 INFO     Could not lock path 00001/4 with session 22a28eb0-6372-1884-257b-629356a2077c.
+ 17/06/2019 20:49:34 ERROR    Error during process.
+ 17/06/2019 20:49:34 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 20:49:36 ERROR    Error during process.
+ 17/06/2019 20:49:36 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 20:49:40 ERROR    Error during process.
+ 17/06/2019 20:49:40 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 20:49:41 ERROR    do_connect() Cannot connect to ceph cluster.
+ 17/06/2019 20:49:41 ERROR    error calling conf_read_file
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/core/ceph/ceph_connector.py", line 66, in do_connect
+    conf=dict(keyring=ceph_auth.get_keyring_path()), rados_id=user_name)
+  File "rados.pyx", line 617, in rados.Rados.__init__ (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:6864)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 668, in rados.Rados.__setup (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:7857)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 731, in rados.Rados.conf_read_file (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:8995)
+ObjectNotFound: [errno 2] error calling conf_read_file
+ 17/06/2019 20:49:41 WARNING  connect() retry(1) Cannot connect to ceph cluster.
+ 17/06/2019 20:49:43 ERROR    do_connect() Cannot connect to ceph cluster.
+ 17/06/2019 20:49:43 ERROR    error calling conf_read_file
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/core/ceph/ceph_connector.py", line 66, in do_connect
+    conf=dict(keyring=ceph_auth.get_keyring_path()), rados_id=user_name)
+  File "rados.pyx", line 617, in rados.Rados.__init__ (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:6864)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 668, in rados.Rados.__setup (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:7857)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 731, in rados.Rados.conf_read_file (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:8995)
+ObjectNotFound: [errno 2] error calling conf_read_file
+ 17/06/2019 20:49:43 WARNING  connect() retry(2) Cannot connect to ceph cluster.
+ 17/06/2019 20:49:46 ERROR    Error during process.
+ 17/06/2019 20:49:46 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 20:49:47 ERROR    do_connect() Cannot connect to ceph cluster.
+ 17/06/2019 20:49:47 ERROR    error calling conf_read_file
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/core/ceph/ceph_connector.py", line 66, in do_connect
+    conf=dict(keyring=ceph_auth.get_keyring_path()), rados_id=user_name)
+  File "rados.pyx", line 617, in rados.Rados.__init__ (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:6864)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 668, in rados.Rados.__setup (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:7857)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 731, in rados.Rados.conf_read_file (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:8995)
+ObjectNotFound: [errno 2] error calling conf_read_file
+ 17/06/2019 20:49:47 WARNING  connect() retry(3) Cannot connect to ceph cluster.
+ 17/06/2019 20:49:54 ERROR    Error during process.
+ 17/06/2019 20:49:54 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 20:49:55 ERROR    do_connect() Cannot connect to ceph cluster.
+ 17/06/2019 20:49:55 ERROR    error calling conf_read_file
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/core/ceph/ceph_connector.py", line 66, in do_connect
+    conf=dict(keyring=ceph_auth.get_keyring_path()), rados_id=user_name)
+  File "rados.pyx", line 617, in rados.Rados.__init__ (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:6864)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 668, in rados.Rados.__setup (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:7857)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 731, in rados.Rados.conf_read_file (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:8995)
+ObjectNotFound: [errno 2] error calling conf_read_file
+ 17/06/2019 20:49:55 WARNING  connect() retry(4) Cannot connect to ceph cluster.
+ 17/06/2019 20:50:04 ERROR    Error during process.
+ 17/06/2019 20:50:04 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 20:50:05 ERROR    General error in Ceph cmd:ceph osd dump --format json  --cluster MOR2
+ 17/06/2019 20:50:11 ERROR    do_connect() Cannot connect to ceph cluster.
+ 17/06/2019 20:50:11 ERROR    error calling conf_read_file
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/core/ceph/ceph_connector.py", line 66, in do_connect
+    conf=dict(keyring=ceph_auth.get_keyring_path()), rados_id=user_name)
+  File "rados.pyx", line 617, in rados.Rados.__init__ (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:6864)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 668, in rados.Rados.__setup (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:7857)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 731, in rados.Rados.conf_read_file (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:8995)
+ObjectNotFound: [errno 2] error calling conf_read_file
+ 17/06/2019 20:50:11 WARNING  connect() retry(5) Cannot connect to ceph cluster.
+ 17/06/2019 20:50:16 ERROR    Error during process.
+ 17/06/2019 20:50:16 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 20:50:28 ERROR    General error in Ceph cmd:ceph osd dump --format json  --cluster MOR2
+ 17/06/2019 20:50:30 ERROR    Error during process.
+ 17/06/2019 20:50:30 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 20:50:43 ERROR    do_connect() Cannot connect to ceph cluster.
+ 17/06/2019 20:50:43 ERROR    error calling conf_read_file
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/core/ceph/ceph_connector.py", line 66, in do_connect
+    conf=dict(keyring=ceph_auth.get_keyring_path()), rados_id=user_name)
+  File "rados.pyx", line 617, in rados.Rados.__init__ (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:6864)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 668, in rados.Rados.__setup (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:7857)
+  File "rados.pyx", line 508, in rados.requires.wrapper.validate_func (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:4943)
+  File "rados.pyx", line 731, in rados.Rados.conf_read_file (/root/ceph-12.2.12/obj-x86_64-linux-gnu/src/pybind/rados/pyrex/rados.c:8995)
+ObjectNotFound: [errno 2] error calling conf_read_file
+ 17/06/2019 20:50:43 WARNING  connect() retry(6) Cannot connect to ceph cluster.
+ 17/06/2019 20:50:46 ERROR    Error during process.
+ 17/06/2019 20:50:46 ERROR    'NoneType' object has no attribute 'iteritems'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 98, in start
+    self.__process()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 132, in __process
+    while self.__do_process() != True:
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 193, in __do_process
+    self.__clean_unused_rbd_images()
+  File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
+    for image, mapped_count in rbd_images.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'

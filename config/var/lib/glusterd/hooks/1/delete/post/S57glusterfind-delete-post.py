@@ -1,0 +1,1 @@
+/usr/lib/x86_64-linux-gnu/glusterfs/glusterfind/S57glusterfind-delete-post.py
