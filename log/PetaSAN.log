@@ -341,3 +341,6 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/dist-packages/PetaSAN/backend/iscsi_service.py", line 377, in __clean_unused_rbd_images
     for image, mapped_count in rbd_images.iteritems():
 AttributeError: 'NoneType' object has no attribute 'iteritems'
+ 17/06/2019 22:14:45 INFO     Success saving application config 
+ 17/06/2019 22:14:45 INFO     Success saving application config 
+ 17/06/2019 22:14:45 INFO     Success saving application config 
